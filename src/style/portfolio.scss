@@ -97,3 +97,24 @@ body{
 	position:relative;
 	top:1px;
 }
+
+.live-link {
+	background-color:#fc702f;
+	border-radius:13px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 19px;
+  text-decoration:none;
+}
+.live-link:hover {
+  background-color:#ad4616;
+  transition: 0.5s ease-in-out;
+}
+.live-link:active {
+	position:relative;
+	top:1px;
+}

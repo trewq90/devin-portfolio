@@ -19,7 +19,7 @@ export default class PortfolioItem extends Component {
   }
 
   render() {
-    const { id, name, description, thumb_image_url, logo_url } = this.props.item;
+    const { id, name, description, url, thumb_image_url, logo_url } = this.props.item;
     return (
      <div className="master-div">
       <div
@@ -47,8 +47,8 @@ export default class PortfolioItem extends Component {
         </div>
       </div>
       <div className="important-links">
-      <a href="" class="github-link">Github</a> 
-      <div className="live-link">Live</div>
+        <a href={url} className="github-link">Github</a> 
+        <a href={url} className="live-link">Live</a> 
     </div>
     </div> 
     );
