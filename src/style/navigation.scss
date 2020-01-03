@@ -1,9 +1,11 @@
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 20px;
+  background: #292b2c;
 
   .right-side {
+    color: white;
     a {
       margin-left: 15px;
       cursor: pointer;
@@ -30,16 +32,17 @@
     font-size: 0.9rem;
 
     a {
-      color: $grey;
+      color: white;
       text-decoration: none;
       &:hover {
-        color: black;
+        color: #fc702f;
+        transition: 0.5s ease-in-out;
       }
     }
 
     .nav-link-active {
-      border-bottom: 1px solid black;
-      color: black;
+      border-bottom: 1px solid #fc702f;
+      color: #fc702f;
     }
   }
 }

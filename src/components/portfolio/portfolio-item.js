@@ -21,7 +21,7 @@ export default class PortfolioItem extends Component {
   render() {
     const { id, name, description, thumb_image_url, logo_url } = this.props.item;
     return (
-      
+     <div className="master-div">
       <div
         className="portfolio-item-wrapper"
         onMouseEnter={() => this.handleMouseEnter()}
@@ -42,10 +42,15 @@ export default class PortfolioItem extends Component {
           <div className="logo-wrapper">
             <img src={logo_url} />
           </div>
-
+          
           <div className="subtitle">{description}</div>
         </div>
       </div>
+      <div className="important-links">
+      <a href="" class="github-link">Github</a> 
+      <div className="live-link">Live</div>
+    </div>
+    </div> 
     );
   }
 }
