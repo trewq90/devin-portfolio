@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-
+import Banner from "./banner.jpg"
 import PortfolioItem from "./portfolio-item";
 
 export default class PortfolioContainer extends Component {
@@ -53,19 +53,19 @@ export default class PortfolioContainer extends Component {
     }
 
     return (
-      <div className="about-me">
-        test items
-        <div className="portfolio-items-wrapper">
-          <button className="btn" onClick={() => this.handleFilter("eCommerce")}>
-            eCommerce
-          </button>
-          <button className="btn" onClick={() => this.handleFilter("Scheduling")}>
-            Scheduling
-          </button>
-          <button className="btn" onClick={() => this.handleFilter("Enterprise")}>
-            Enterprise
-          </button>
+      <div className="opening-wrapper">
+        <div className="banner" style={{backgroundImage: `url(${Banner})`}}>
+          <h1>Devin Lubis</h1>
 
+          <h1>Full Stack Web Developer. I like learning things.</h1>
+        </div>
+          About Me
+
+        <div className="about-me">
+          
+        </div> 
+
+        <div className="portfolio-items-wrapper">
           {this.portfolioItems()}
         </div>
       </div>
