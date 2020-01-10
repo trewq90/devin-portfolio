@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import axios from "axios";
+import Banner from "./portfolio/banner.jpg";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -95,6 +96,20 @@ export default class App extends Component {
 
   render() {
     return (
+      <div className="opening-wrapper">
+        <div className="row-text-area">
+        <div className="banner" style={{
+          backgroundImage: `url(${Banner})`,
+          }}>
+          
+
+            <h1>Devin Lubis</h1>
+
+            <h1>Full Stack Web Developer.</h1>
+
+          </div>
+        </div>
+
       <div className="container">
         <Router>
           <div>
@@ -133,6 +148,7 @@ export default class App extends Component {
             </Switch>
           </div>
         </Router>
+      </div>
       </div>
     );
   }
