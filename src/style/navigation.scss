@@ -4,6 +4,7 @@
   padding: 10px;
   background: #292b2c;
   border-bottom: 3px solid #87dade;
+  position: flex;
 
   .right-side {
     color: white;
@@ -24,7 +25,7 @@
     display: flex;
     margin-left: 20px;
     justify-content: space-around;
-    width: 400px;
+    width: 600px;
   }
 
   .nav-link-wrapper {

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import PortfolioItem from "./portfolio-item";
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default class PortfolioContainer extends Component {
   constructor() {
@@ -52,11 +53,12 @@ export default class PortfolioContainer extends Component {
     }
 
     return (
-      
-
-        <div className="portfolio-items-wrapper">
-          
-          {this.portfolioItems()}
+        <div className="information-wrapper">
+          King of Fighters
+          <div id="portfolio-items-wrapper">
+            
+            {this.portfolioItems()}
+          </div>
         </div>
     );
   }

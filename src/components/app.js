@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import axios from "axios";
 import Banner from "./portfolio/banner.jpg";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTrash,
   faSignOutAlt,
   faEdit
 } from "@fortawesome/free-solid-svg-icons";
-
+import { FaGithub } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 import NavigationContainer from "./navigation/navigation-container";
 import Home from "./pages/home";
 import About from "./pages/about";
@@ -20,6 +20,7 @@ import PortfolioManager from "./pages/portfolio-manager";
 import PortfolioDetail from "./portfolio/portfolio-detail";
 import Auth from "./pages/auth";
 import NoMatch from "./pages/no-match";
+import { HashLink as Link } from 'react-router-hash-link';
 
 library.add(faTrash, faSignOutAlt, faEdit);
 
@@ -101,12 +102,24 @@ export default class App extends Component {
         <div className="banner" style={{
           backgroundImage: `url(${Banner})`,
           }}>
-          
+            <div className="banner-details">
+              <div className="name">Devin Lubis</div>
+              <div className="career">Full Stack Web Developer</div>
+              <hr></hr>
+              <div className="header-links">
+              
+                <a href="https://github.com/trewq90">
+                  <FaGithub /></a> 
 
-            <h1>Devin Lubis</h1>
-
-            <h1>Full Stack Web Developer.</h1>
-
+                <a href="https://www.linkedin.com/in/devin-setiady-a4b21717b/">
+                  <FaLinkedin /></a> 
+              </div>
+              
+              <div className="view-projects-button">
+                <Link to="/pathLink#portfolio-items-wrapper">My Projects</Link>
+              </div>
+              
+            </div>
           </div>
         </div>
 

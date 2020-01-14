@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 export default class PortfolioItem extends Component {
@@ -48,7 +49,9 @@ export default class PortfolioItem extends Component {
         </div>
 
         <div className="important-links">
-          <a href={url} className="github-link">Github</a> 
+          <a href={url} className="github-link">Github
+          </a> 
+          
           <a href={url} className="live-link">Live</a> 
         </div>
 
