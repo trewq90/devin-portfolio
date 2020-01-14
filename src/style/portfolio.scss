@@ -29,7 +29,6 @@ body{
 
   .border-wrapper:hover {
     border: 2px solid #c7d4e6;
-    transition: .1s;
     padding: 0px;
   }
 
@@ -176,7 +175,7 @@ body{
   padding: 30px;
   font-family: monospace;
   color: seashell;
-  font-size: 5vh;
+  font-size: 4vh;
 }
 
 hr {
@@ -209,6 +208,62 @@ hr {
   border: 2px solid #194346;
   cursor: pointer;
   transition: .5s all;
+}
+
+.banner-github {
+  transition: .7s;
+  color: white;
+  width: 29px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.banner-github:hover {
+  color: black;
+  background-color: white;
+  transition: .7s;
+  width: 29px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.banner-linkedin {
+  color: white;
+  transition: .7s;
+  height: 26px;
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-linkedin:hover {
+    color: #0077b5;
+    transition: .7s;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    width: 28px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.about-me-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {

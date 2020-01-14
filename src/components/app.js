@@ -104,15 +104,29 @@ export default class App extends Component {
           }}>
             <div className="banner-details">
               <div className="name">Devin Lubis</div>
-              <div className="career">Full Stack Web Developer</div>
-              <hr></hr>
-              <div className="header-links">
-              
-                <a href="https://github.com/trewq90">
-                  <FaGithub /></a> 
 
-                <a href="https://www.linkedin.com/in/devin-setiady-a4b21717b/">
-                  <FaLinkedin /></a> 
+              <div className="career">Full Stack Web Developer</div>
+
+              <hr></hr>
+              
+              <div className="header-links">
+                  <div className="links">
+
+                    <a rel="noopener noreferrer" 
+                      href="https://github.com/trewq90" 
+                      target="_blank"
+                      className="banner-github">
+                      <FaGithub />
+                    </a> 
+
+                    <a rel="noopener noreferrer" 
+                      href="https://www.linkedin.com/in/devin-setiady-a4b21717b/" 
+                      target="_blank"
+                      className="banner-linkedin">
+                      <FaLinkedin />
+                    </a>    
+
+                  </div>
               </div>
               
               <div className="view-projects-button">

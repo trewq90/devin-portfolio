@@ -49,10 +49,17 @@ export default class PortfolioItem extends Component {
         </div>
 
         <div className="important-links">
-          <a href={url} className="github-link">Github
+          <a href={url} 
+          className="github-link"
+          target="_blank">
+            Github
           </a> 
-          
-          <a href={url} className="live-link">Live</a> 
+
+          <a href={url} 
+          className="live-link"
+          target="_blank">
+            Live
+          </a> 
         </div>
 
       </div>

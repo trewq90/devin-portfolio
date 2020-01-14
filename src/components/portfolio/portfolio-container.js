@@ -53,13 +53,16 @@ export default class PortfolioContainer extends Component {
     }
 
     return (
-        <div className="information-wrapper">
-          King of Fighters
-          <div id="portfolio-items-wrapper">
-            
-            {this.portfolioItems()}
-          </div>
+      <div className="information-wrapper">
+        <div className="about-me-wrapper">
+          About Me
         </div>
+        
+        <div id="portfolio-items-wrapper">
+          
+          {this.portfolioItems()}
+        </div>
+      </div>
     );
   }
 }
