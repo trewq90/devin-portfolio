@@ -1,19 +1,285 @@
-@media (max-width: 600px) {
-  body {
-  color: red;
+@media (min-width: 600px) {
+  body{
+    overflow-x:hidden;
+  }
+  
+  .portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    margin-top: 20px;
+    
+    .master-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  
+    .border-wrapper {
+      background-color: #f7f7f7;
+      box-shadow: 0px 1px #f7f7f7;
+      border: 1px solid #c7d4e6;
+      padding: 1px;
+      border-radius: 9px;
+      margin-bottom: 50px;
+      height: 100%;
+    }
+  
+    .border-wrapper:hover {
+      border: 2px solid #c7d4e6;
+      padding: 0px;
+    }
+  
+    .portfolio-item-wrapper {
+      position: relative;
+      margin: 20px;
+  
+      .portfolio-img-background {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 350px;
+      }
+  
+      .img-text-wrapper {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 433px;
+        text-align: center;
+  
+        .subtitle {
+          display: flex;
+          align-items: center;
+          transition: 1s ease-in-out;
+          color: transparent;
+          width: 350px;
+        }
+      }
+  
+      .img-text-wrapper:hover .subtitle {
+        color: $teal;
+        font-weight: 400;
+      }
+  
+      .logo-wrapper img {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+  .image-blur {
+    transition: 1s;
+    filter: brightness(10%);
+  }
+  
+  .portfolio-item-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .important-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    margin-bottom: 10px;
+  }
+  
+  .github-link {
+    background-color:#4fa9ad;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:9px 19px;
+    text-decoration:none;
+  }
+  .github-link:hover {
+    background-color:#275a63;
+    transition: 0.5s ease-in-out;
+  }
+  .github-link:active {
+    position:relative;
+    top:1px;
+  }
+  
+  .live-link {
+    background-color:#fc702f;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:9px 19px;
+    text-decoration:none;
+  }
+  .live-link:hover {
+    background-color:#ad4616;
+    transition: 0.5s ease-in-out;
+  }
+  .live-link:active {
+    position:relative;
+    top:1px;
+  }
+  
+  .banner {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-repeat: round;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row-text-area {
+    color: white;
+    background-color: black;
+  }
+  
+  .banner-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-size: xx-large;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-top: 100px;
+  }
+  
+  .name {
+    font-size: 7vh;
+    color: seashell;
+    font-weight: 600;
+  }
+  
+  .career {
+    padding: 30px;
+    font-family: monospace;
+    color: seashell;
+    font-size: 4vh;
+  }
+  
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    width: 50vh;
+    background-color: white;
+    border: solid 1px white;
+  }
+  
+  .header-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    padding-bottom: 40px;
+  }
+  
+  .view-projects-button {
+    border: 2px solid white;
+    padding: 12px 20px 12px 20px;
+    transition: .5s all;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .view-projects-button:hover {
+    background-color: #194346;
+    border: 2px solid #194346;
+    cursor: pointer;
+    transition: .5s all;
+  }
+  
+  .banner-github {
+    transition: .7s;
+    color: white;
+    width: 29px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+  }
+  
+  .banner-github:hover {
+    color: black;
+    background-color: white;
+    transition: .7s;
+    width: 29px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+  }
+  
+  .banner-linkedin {
+    color: white;
+    transition: .7s;
+    height: 26px;
+    width: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner-linkedin:hover {
+      color: #0077b5;
+      transition: .7s;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 26px;
+      width: 28px;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+  }
+  
+  .about-me-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 50px;
+    padding: 20px;
+    font-family: inherit;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
   }
 }
 
-body{
-  overflow-x:hidden;
-}
-
-.portfolio-items-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: white;
-  margin-top: 20px;
-  
   .master-div {
     display: flex;
     flex-direction: column;
@@ -78,7 +344,7 @@ body{
       margin-bottom: 20px;
     }
   }
-}
+
 
 .image-blur {
   transition: 1s;
@@ -103,14 +369,14 @@ body{
 }
 
 .github-link {
-	background-color:#4fa9ad;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:9px 19px;
+  background-color:#4fa9ad;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:9px 19px;
   text-decoration:none;
 }
 .github-link:hover {
@@ -118,19 +384,19 @@ body{
   transition: 0.5s ease-in-out;
 }
 .github-link:active {
-	position:relative;
-	top:1px;
+  position:relative;
+  top:1px;
 }
 
 .live-link {
-	background-color:#fc702f;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:9px 19px;
+  background-color:#fc702f;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:9px 19px;
   text-decoration:none;
 }
 .live-link:hover {
@@ -138,8 +404,8 @@ body{
   transition: 0.5s ease-in-out;
 }
 .live-link:active {
-	position:relative;
-	top:1px;
+  position:relative;
+  top:1px;
 }
 
 .banner {
@@ -283,3 +549,4 @@ a {
   color: white;
   text-decoration: none;
 }
+
