@@ -54,11 +54,23 @@ export default class PortfolioContainer extends Component {
 
     return (
       <div className="information-wrapper">
+        About Me
         <div className="about-me-wrapper">
-          About Me
+          Full stack web developer.
+
+          <div className="skills-wrapper">
+
+          Javascript, ReactJS, Python 3, UML, HTML5, CSS, Flask, JSON, Git, MongoDB, SQL Databases, SCSS/SASS, Flexbox, CSS Grid
+        ● Design Tools: Visual Studio Code, Postman, Heroku, GitHub
+
+
+          </div>
+          
+
+          
         </div>
         
-        <div id="portfolio-items-wrapper">
+        <div class="portfolio-items-wrapper">
           
           {this.portfolioItems()}
         </div>

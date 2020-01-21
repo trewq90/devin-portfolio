@@ -1,9 +1,14 @@
-body{
-  overflow-x:hidden;
-  
+@media (max-width: 600px) {
+  body {
+  color: red;
+  }
 }
 
-#portfolio-items-wrapper {
+body{
+  overflow-x:hidden;
+}
+
+.portfolio-items-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: white;
@@ -262,6 +267,7 @@ hr {
 
 .about-me-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

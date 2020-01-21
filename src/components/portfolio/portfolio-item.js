@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
 
 export default class PortfolioItem extends Component {
   constructor(props) {
@@ -20,7 +18,7 @@ export default class PortfolioItem extends Component {
   }
 
   render() {
-    const { id, name, description, url, thumb_image_url, logo_url } = this.props.item;
+    const { id, name, description, url, url2, thumb_image_url, logo_url } = this.props.item;
     return (
      <div className="master-div">
        <div className="border-wrapper">
