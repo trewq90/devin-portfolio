@@ -3,11 +3,11 @@
     overflow-x:hidden;
   }
   
-  .portfolio-items-wrapper {
+  #portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: white;
-    margin-top: 20px;
+    margin-top: 200px;
     
     .master-div {
       display: flex;
@@ -234,7 +234,7 @@
   }
   
   .banner-linkedin {
-    color: white;
+    color: #fff;
     transition: .7s;
     height: 26px;
     width: 28px;
@@ -266,6 +266,73 @@
     justify-content: center;
     align-items: center;
   }
+
+  .skewed-header {
+      position: relative;
+      height: 650px;
+      overflow: hidden;
+  }
+
+  .skewed-header > .header-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#11122b;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+}
+
+.skewed-header > .skewed-header-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.skewed-header > .skewed-header-wrapper > .skewed-header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me-wrapper {
+  margin: 0;
+  font-size: 6vh;
+  padding: 20px;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skewed-header > .skewed-header-wrapper > .skewed-header-content > .heading-wrapper {
+    color: seashell;
+    padding: 10px;
+}
+
+.skills-wrapper {
+  display: flex;
+  width: 500px;
+}
+
+.skills-one {
+  display: flex;
+  width: 500px;
+  justify-content: space-around;
+}
+
+.skills-two {
+
+}
+
+
   
   h1 {
     margin: 0;
@@ -278,6 +345,25 @@
     color: white;
     text-decoration: none;
   }
+
+  li {
+    color: seashell;
+    padding: 5px;
+  }
+
+  p {
+    color:#cbcbcb;
+    padding-top: 10px;
+    width: 450px;
+    text-align: center;
+  }
+}
+
+//* Mobile *//
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
 }
 
   .master-div {
@@ -285,7 +371,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
 
   .border-wrapper {
@@ -434,6 +519,7 @@
   margin-right: -15px;
   margin-left: -15px;
   padding-top: 100px;
+  margin-bottom: 10px;
 }
 
 .name {
@@ -532,10 +618,14 @@ hr {
 }
 
 .about-me-wrapper {
+  margin: 0;
+  font-size: 6vh;
+  padding: 20px;
+  font-family: inherit;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
 
 h1 {

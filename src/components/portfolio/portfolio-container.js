@@ -54,24 +54,65 @@ export default class PortfolioContainer extends Component {
 
     return (
       <div className="information-wrapper">
-        About Me
-        <div className="about-me-wrapper">
-          Full stack web developer.
+        <div className="skewed-header">
+          <div class="skewed-header">
 
-          <div className="skills-wrapper">
+            <div class="header-bg">
 
-          Javascript, ReactJS, Python 3, UML, HTML5, CSS, Flask, JSON, Git, MongoDB, SQL Databases, SCSS/SASS, Flexbox, CSS Grid
-        ● Design Tools: Visual Studio Code, Postman, Heroku, GitHub
+            </div>  
+
+            <div class="skewed-header-wrapper">
+              <div class="skewed-header-content">
+                <div class="heading-wrapper">
+                  <div class="about-me-wrapper">ABOUT ME</div>
+                  <hr></hr>
+                    <p>
+                      I am an Atlanta-based Full Stack Web Developer with a great passion for learning
+                      and developing practical and efficient user experiences.
+                    </p>
+                  <hr></hr>
+                  </div>
+
+                  <div class="skills-wrapper">
+                    <div class="skills-one">
+                      <div>
+                        <li>Javascript</li>
+                        <li>ReactJS</li>
+                        <li>Python 3</li>
+                        <li>CSS</li>
+                        <li>HTML5</li>
+                        <li>JSON</li>
+                        <li>Flask</li>
+                      </div>
+
+                      <div>
+                        <li>UML</li>
+                        <li>Git</li>                     
+                        <li>SCSS/SASS</li>
+                        <li>Flexbox</li>
+                        <li>CSS Grid</li>
+                      </div>
+                    </div>
+
+                    <div class="skills-two">
+                      <li style={{ width: '158px' }}>Visual Studio Code</li>
+                      <li>Postman</li>
+                      <li>Heroku</li>
+                      <li>GitHub</li>
+                      <li>MongoDB</li>
+                      <li>SQL Databases</li>
+                    </div>
 
 
+                    
+
+                  </div>
+              </div>
+            </div>
           </div>
-          
-
-          
         </div>
         
-        <div class="portfolio-items-wrapper">
-          
+        <div id="portfolio-items-wrapper">
           {this.portfolioItems()}
         </div>
       </div>
