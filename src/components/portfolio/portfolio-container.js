@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
 import PortfolioItem from "./portfolio-item";
-import { HashLink as Link } from 'react-router-hash-link';
 
 export default class PortfolioContainer extends Component {
   constructor() {
@@ -91,6 +90,7 @@ export default class PortfolioContainer extends Component {
                         <li>SCSS/SASS</li>
                         <li>Flexbox</li>
                         <li>CSS Grid</li>
+                        <li>SQL Databases</li>
                       </div>
                     </div>
 
@@ -100,7 +100,6 @@ export default class PortfolioContainer extends Component {
                       <li>Heroku</li>
                       <li>GitHub</li>
                       <li>MongoDB</li>
-                      <li>SQL Databases</li>
                     </div>
 
 

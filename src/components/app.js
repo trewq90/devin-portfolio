@@ -139,7 +139,7 @@ export default class App extends Component {
 
       <div className="container">
         <Router>
-          <div>
+          <div className="pages">
             <NavigationContainer
               loggedInStatus={this.state.loggedInStatus}
               handleSuccessfulLogout={this.handleSuccessfulLogout}
