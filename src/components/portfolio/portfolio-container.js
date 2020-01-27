@@ -92,6 +92,14 @@ export default class PortfolioContainer extends Component {
                         <li>CSS Grid</li>
                         <li>SQL Databases</li>
                       </div>
+
+                      <div className="hidden-skill">
+                        <li>Visual Studio Code</li>
+                        <li>Postman</li>
+                        <li>Heroku</li>
+                        <li>GitHub</li>
+                        <li>MongoDB</li>
+                      </div>
                     </div>
 
                     <div class="skills-two">

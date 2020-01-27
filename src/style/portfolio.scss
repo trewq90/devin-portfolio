@@ -326,11 +326,8 @@
 .skills-one {
   display: flex;
   width: 500px;
-  justify-content: space-around;
-}
-
-.skills-two {
-
+  justify-content: space-between;
+  padding-top: 35px;
 }
 
 .pages {
@@ -338,7 +335,7 @@
 }
 
 .no-match {
-  background-color: #000122;
+  background-color: #11122b;
   color: seashell;
   height: 500px;
   display: flex;
@@ -640,6 +637,10 @@ hr {
   height: 750px;
 }
 
+.heading-wrapper {
+  text-align: center;
+}
+
 .about-me-wrapper {
   margin: 0;
   font-size: 6vh;
@@ -649,6 +650,25 @@ hr {
   align-items: center;
   justify-content: center;
   font-weight: bold;
+}
+
+.skewed-header-content {
+  background-color: #11122b;
+  color: white;
+  margin-bottom: 20px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.skills-one {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills-two {
+  display: none;
 }
 
 h1 {
