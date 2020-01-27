@@ -326,7 +326,6 @@
 .skills-one {
   display: flex;
   width: 500px;
-  justify-content: space-between;
   padding-top: 35px;
 }
 
@@ -664,7 +663,7 @@ hr {
 
 .skills-one {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .skills-two {
@@ -683,3 +682,8 @@ a {
   text-decoration: none;
 }
 
+@media (max-width: 800px) {
+  .skills-one {
+    justify-content: space-evenly;
+  }
+}
