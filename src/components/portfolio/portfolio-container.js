@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import PortfolioItem from "./portfolio-item";
-import Banner from "./banner.jpg";
+import Rat from "./rat-game-image-scaled.png"
+import Fries from "./ds-devcamp-fries-scaled.png"
 
 export default class PortfolioContainer extends Component {
   constructor() {
@@ -10,11 +11,32 @@ export default class PortfolioContainer extends Component {
     this.state = {
       pageTitle: "Welcome to my portfolio",
       isLoading: false,
-      data: []
+      data: [],
+      portfolioItemClass: "",
+      portfolioItemClass2: ""
     };
 
     this.handleFilter = this.handleFilter.bind(this);
+    
   }
+
+  handleMouseEnter() {
+    this.setState({ portfolioItemClass: "image-blur" });
+  }
+
+  handleMouseLeave() {
+    this.setState({ portfolioItemClass: "" });
+  }
+
+  handleMouseEnter2() {
+    this.setState({ portfolioItemClass2: "image-blur" });
+  }
+
+  handleMouseLeave2() {
+    this.setState({ portfolioItemClass2: "" });
+  }
+
+
 
   handleFilter(filter) {
     this.setState({
@@ -126,12 +148,12 @@ export default class PortfolioContainer extends Component {
                 <div className="portfolio-item-title">Rat Game</div>
                 <div
             className=
-            {"portfolio-img-background " + this.state.portfolioItemClass} style={{backgroundImage: `url(${Banner})`}}/>
+            {"portfolio-img-background " + this.state.portfolioItemClass} style={{backgroundImage: `url(${Rat})`}}/>
                 <div className="img-text-wrapper">
                   <div className="logo-wrapper">
                   </div>
                   <div className="subtitle">
-                    testing
+                    Web based browser game made with ReactJS, CSS, SCSS, Flexbox, REST, Python, and Flask.
                   </div>
                 </div>
               </div>
@@ -155,17 +177,17 @@ export default class PortfolioContainer extends Component {
           <div className="master-div">
             <div className="border-wrapper">
               <div className="portfolio-item-wrapper"
-                onMouseEnter={() => this.handleMouseEnter()}
-                onMouseLeave={() => this.handleMouseLeave()}>   
-                <div className="portfolio-item-title">Rat Game</div>
+                onMouseEnter={() => this.handleMouseEnter2()}
+                onMouseLeave={() => this.handleMouseLeave2()}>   
+                <div className="portfolio-item-title">DevCamp's Fantastic Fries</div>
                 <div
             className=
-            {"portfolio-img-background " + this.state.portfolioItemClass} style={{backgroundImage: `url(${Banner})`}}/>
+            {"portfolio-img-background " + this.state.portfolioItemClass2} style={{backgroundImage: `url(${Fries})`}}/>
                 <div className="img-text-wrapper">
                   <div className="logo-wrapper">
                   </div>
                   <div className="subtitle">
-                    testing
+                    A multi page, responsive restaurant website made with HTML5, CSS3, Flexbox, and media queries. 
                   </div>
                 </div>
               </div>
