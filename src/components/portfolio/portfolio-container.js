@@ -159,13 +159,13 @@ export default class PortfolioContainer extends Component {
               </div>
 
               <div className="important-links">
-                <a href="google.com"
+                <a href="https://github.com/trewq90/rat-capstone"
                 className="github-link"
                 target="_blank">
                   Github
                 </a> 
 
-                <a href="google.com"
+                <a href="https://ds-capstone-frontend.herokuapp.com/"
                 className="live-link"
                 target="_blank">
                   Live
@@ -193,13 +193,13 @@ export default class PortfolioContainer extends Component {
               </div>
 
               <div className="important-links">
-                <a href="google.com"
+                <a href="https://github.com/trewq90/ds-devcamp-fries"
                 className="github-link"
                 target="_blank">
                   Github
                 </a> 
 
-                <a href="google.com"
+                <a href="https://ds-devcamp-fries.herokuapp.com/"
                 className="live-link"
                 target="_blank">
                   Live
