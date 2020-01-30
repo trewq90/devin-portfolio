@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import PortfolioItem from "./portfolio-item";
+import Banner from "./banner.jpg";
 
 export default class PortfolioContainer extends Component {
   constructor() {
@@ -109,10 +110,6 @@ export default class PortfolioContainer extends Component {
                       <li>GitHub</li>
                       <li>MongoDB</li>
                     </div>
-
-
-                    
-
                   </div>
               </div>
             </div>
@@ -120,7 +117,74 @@ export default class PortfolioContainer extends Component {
         </div>
         
         <div id="portfolio-items-wrapper">
-          {this.portfolioItems()}
+          {/* Rat Game Div */}  
+          <div className="master-div">
+            <div className="border-wrapper">
+              <div className="portfolio-item-wrapper"
+                onMouseEnter={() => this.handleMouseEnter()}
+                onMouseLeave={() => this.handleMouseLeave()}>   
+                <div className="portfolio-item-title">Rat Game</div>
+                <div
+            className=
+            {"portfolio-img-background " + this.state.portfolioItemClass} style={{backgroundImage: `url(${Banner})`}}/>
+                <div className="img-text-wrapper">
+                  <div className="logo-wrapper">
+                  </div>
+                  <div className="subtitle">
+                    testing
+                  </div>
+                </div>
+              </div>
+
+              <div className="important-links">
+                <a href="google.com"
+                className="github-link"
+                target="_blank">
+                  Github
+                </a> 
+
+                <a href="google.com"
+                className="live-link"
+                target="_blank">
+                  Live
+                </a> 
+              </div>
+            </div>
+          </div> 
+          {/* DevCamp Fries Div */} 
+          <div className="master-div">
+            <div className="border-wrapper">
+              <div className="portfolio-item-wrapper"
+                onMouseEnter={() => this.handleMouseEnter()}
+                onMouseLeave={() => this.handleMouseLeave()}>   
+                <div className="portfolio-item-title">Rat Game</div>
+                <div
+            className=
+            {"portfolio-img-background " + this.state.portfolioItemClass} style={{backgroundImage: `url(${Banner})`}}/>
+                <div className="img-text-wrapper">
+                  <div className="logo-wrapper">
+                  </div>
+                  <div className="subtitle">
+                    testing
+                  </div>
+                </div>
+              </div>
+
+              <div className="important-links">
+                <a href="google.com"
+                className="github-link"
+                target="_blank">
+                  Github
+                </a> 
+
+                <a href="google.com"
+                className="live-link"
+                target="_blank">
+                  Live
+                </a> 
+              </div>
+            </div>
+          </div> 
         </div>
       </div>
     );
