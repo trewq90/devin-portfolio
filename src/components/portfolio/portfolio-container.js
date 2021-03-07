@@ -90,7 +90,7 @@ export default class PortfolioContainer extends Component {
                   <hr></hr>
                     <p>
                       I am an Atlanta-based Full Stack Web Developer with a great passion for learning
-                      and developing practical and efficient user experiences.
+                      and developing practical, efficient, and enjoyable user experiences.
                     </p>
                   <hr></hr>
                   </div>
@@ -105,6 +105,7 @@ export default class PortfolioContainer extends Component {
                         <li>HTML5</li>
                         <li>JSON</li>
                         <li>Flask</li>
+                        <li>Ruby</li>
                       </div>
 
                       <div>
@@ -114,6 +115,7 @@ export default class PortfolioContainer extends Component {
                         <li>Flexbox</li>
                         <li>CSS Grid</li>
                         <li>SQL Databases</li>
+                        <li>Gitlab</li>
                       </div>
 
                       <div className="hidden-skill">
@@ -122,6 +124,7 @@ export default class PortfolioContainer extends Component {
                         <li>Heroku</li>
                         <li>GitHub</li>
                         <li>MongoDB</li>
+                        <li>Microsoft Office</li>
                       </div>
                     </div>
 
@@ -131,6 +134,7 @@ export default class PortfolioContainer extends Component {
                       <li>Heroku</li>
                       <li>GitHub</li>
                       <li>MongoDB</li>
+                      <li>Microsoft Office</li>
                     </div>
                   </div>
               </div>
